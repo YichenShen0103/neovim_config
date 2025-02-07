@@ -33,14 +33,6 @@ return {
 			vim.keymap.set("n", "gr", vim.lsp.buf.references, {})
 			vim.keymap.set("n", "ca", vim.lsp.buf.code_action, {})
 
-			-- 修改诊断符号
-			vim.diagnostic.config({
-				virtual_text = true, -- 是否在代码上方显示错误/警告
-				signs = true, -- 是否在行号旁边显示诊断标志
-				underline = true, -- 是否对有错误的地方进行下划线标记
-				update_in_insert = true,
-			})
-
 			-- 自定义诊断符号
 			local signs = {
 				{ name = "DiagnosticSignError", text = "" }, -- 错误标志
