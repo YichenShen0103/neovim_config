@@ -17,6 +17,9 @@ return {
 				"StatusLineNC",
 				"NeoTreeStatusLine",
 				"NeoTreeStatusLineNC",
+                "TabLine",
+                "TabLineFill",
+                "TabLineSel",
 			},
 		})
 	end,
