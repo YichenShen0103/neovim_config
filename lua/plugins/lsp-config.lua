@@ -32,6 +32,7 @@ return {
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
 			vim.keymap.set("n", "gr", vim.lsp.buf.references, {})
 			vim.keymap.set("n", "ca", vim.lsp.buf.code_action, {})
+            vim.keymap.set("n", "gb", ":pop<CR>", {})
 
 			-- 自定义诊断符号
 			local signs = {
