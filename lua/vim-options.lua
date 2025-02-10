@@ -5,6 +5,7 @@ vim.cmd("set shiftwidth=4")
 vim.cmd("set nu")
 vim.cmd("set relativenumber")
 vim.cmd("set noshowmode")
+vim.cmd("set clipboard=unnamedplus")
 
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "

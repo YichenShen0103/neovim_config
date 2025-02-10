@@ -12,11 +12,6 @@ return {
         vim.keymap.set("n", "<leader>b", ":Neotree toggle buffers right<CR>")
         vim.keymap.set("n", "<leader>s", ":Neotree float git_status<CR>")
         require("neo-tree").setup({
-            filesystem = {
-                filtered_items = {
-                    visible = true, -- 显示过滤后的文件
-                },
-            },
             window = {
                 width = 30,
             },
