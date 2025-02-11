@@ -10,7 +10,7 @@ vim.cmd("set clipboard=unnamedplus")
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 local map = vim.api.nvim_set_keymap
-local opts = { noremap, silent }
+local opts = { noremap = true, silent = true }
 map("n", "<Leader>w", ":w<CR>", opts)
 map("n", "<Leader>q", ":wq<CR>", opts)
 map("n", "<Leader>Q", ":q!<CR>", opts)
