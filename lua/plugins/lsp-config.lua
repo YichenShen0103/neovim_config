@@ -3,7 +3,7 @@ return {
 		"williamboman/mason.nvim",
 		config = function()
 			require("mason").setup()
-        end,
+		end,
 	},
 	{
 		"williamboman/mason-lspconfig.nvim",
@@ -24,6 +24,7 @@ return {
 			})
 			lspconfig.clangd.setup({
 				capabilities = capabilities,
+                cmd = { "clangd" },
 			})
 			lspconfig.pyright.setup({
 				capabilities = capabilities,
@@ -32,7 +33,7 @@ return {
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
 			vim.keymap.set("n", "gr", vim.lsp.buf.references, {})
 			vim.keymap.set("n", "ca", vim.lsp.buf.code_action, {})
-            vim.keymap.set("n", "gb", ":pop<CR>", {})
+			vim.keymap.set("n", "gb", ":pop<CR>", {})
 
 			-- 自定义诊断符号
 			local signs = {
