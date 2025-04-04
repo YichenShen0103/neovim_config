@@ -31,6 +31,9 @@ return {
 						"-o /tmp/$fileNameWithoutExt &&",
 						"/tmp/$fileNameWithoutExt",
 					},
+					php = {
+						"php",
+					},
 				},
 			})
 		end,
