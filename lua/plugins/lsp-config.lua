@@ -1,12 +1,14 @@
 return {
 	{
 		"williamboman/mason.nvim",
+		commit = "e2f7f9044ec30067bc11800a9e266664b88cda22",
 		config = function()
 			require("mason").setup()
 		end,
 	},
 	{
 		"williamboman/mason-lspconfig.nvim",
+		commit = "f75e877f5266e87523eb5a18fcde2081820d087b",
 		config = function()
 			require("mason-lspconfig").setup({
 				ensure_installed = { "lua_ls" },
@@ -15,6 +17,7 @@ return {
 	},
 	{
 		"neovim/nvim-lspconfig",
+		commit = "f98fa715acc975c2dd5fb5ba7ceddeb1cc725ad2",
 		lazy = false,
 		config = function()
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
