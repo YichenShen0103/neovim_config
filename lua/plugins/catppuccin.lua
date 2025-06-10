@@ -3,7 +3,7 @@ return {
     name = "catppuccin",
     priority = 100,
     config = function()
-        require("catppuccin").setup({ transparent = vim.g.transparent_enabled })
+        require("catppuccin").setup({})
         vim.cmd.colorscheme "catppuccin"
     end
 }
